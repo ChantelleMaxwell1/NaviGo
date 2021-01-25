@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <ImageView
+        android:id="@+id/settings_img"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background" />
+
+    <ImageButton
+        android:id="@+id/btn_nav2"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_weight="2"
+        android:background="#00FFFFFF"
+        android:paddingRight="15dp"
+        android:src="@drawable/ic_nav2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/user_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="25dp"
+        android:text="User Information"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_img" />
+
+    <TableLayout
+        android:id="@+id/settings_table"
+        android:layout_width="match_parent"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="25dp"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/user_header">
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <TextView
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="First Name" />
+
+    </TableRow>
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:text="Surname"
+                android:paddingRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/profile_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Last Name" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:text="Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="abc@xyz.co.za" />
+
+        </TableRow>
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:text="Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/profile_units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="Metric/Imperial" />
+
+    </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/update_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:text="Update Settings"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/settings_table"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/update_header"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="9dp"
+            android:text="Settings"
+            android:textSize="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/btnGroup_units"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.661"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/btn_metric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metric"
+                android:paddingRight="10dp"
+                android:textSize="14sp"
+                tools:layout_conversion_absoluteHeight="27dp"
+                tools:layout_conversion_absoluteWidth="90dp"
+                tools:layout_editor_absoluteX="120dp"
+                tools:layout_editor_absoluteY="208dp" />
+
+            <RadioButton
+                android:id="@+id/btn_imperial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Imperial"
+                android:paddingRight="10dp"
+                android:textSize="14sp"
+                tools:layout_conversion_absoluteHeight="27dp"
+                tools:layout_conversion_absoluteWidth="101dp"
+                tools:layout_editor_absoluteX="210dp"
+                tools:layout_editor_absoluteY="208dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_sUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Update"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_sBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Back"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

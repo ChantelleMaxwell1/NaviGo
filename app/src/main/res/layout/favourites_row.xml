@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/place_cardview"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/cardview_compat_inset_shadow"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/place_image"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_user_pin"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/place_name"
+                        android:text="Place Name"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <!--<TextView
+                        android:id="@+id/place_address"
+                        android:text="Place Address"
+                        android:textSize="16sp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="3dp"
+                            android:textSize="10sp"
+                            android:text="Address:"/>-->
+
+                        <TextView
+                            android:id="@+id/place_address"
+                            android:text="1st Street, Cape Town, South Africa"
+                            android:textSize="10sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="3dp"
+                            android:textSize="8sp"
+                            android:textStyle="italic"
+                            android:text="Co-ordinates:"/>
+
+                        <TextView
+                            android:id="@+id/place_lat"
+                            android:text="Latitude"
+                            android:textSize="8sp"
+                            android:textStyle="italic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="3dp"
+                            android:textSize="8sp"
+                            android:text=" ,"/>
+
+                        <TextView
+                            android:id="@+id/place_lng"
+                            android:text="Longitude"
+                            android:textSize="8sp"
+                            android:textStyle="italic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

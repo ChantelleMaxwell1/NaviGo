@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NaviGoApp</string>
+    <string name="maps_api_key_OLD">AIzaSyCu75Dc6bRKULsFAs0v5zcHxphKoOUZhlQ</string>
+    <string name="maps_api_key">AIzaSyAXkNCKULN-JmWtgbfBrijrnFvhuaBDPHQ</string>
+</resources>

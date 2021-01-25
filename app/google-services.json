@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "599472880080",
+    "firebase_url": "https://direct-branch-291212.firebaseio.com",
+    "project_id": "direct-branch-291212",
+    "storage_bucket": "direct-branch-291212.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599472880080:android:c4a5316e398eb4490a21d5",
+        "android_client_info": {
+          "package_name": "com.example.navigoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599472880080-aehh06jjvgkhc5o40dmiaqa23gb2cpsj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.navigoapp",
+            "certificate_hash": "b7f1b15ebe61c174e034812edb598446d84b5948"
+          }
+        },
+        {
+          "client_id": "599472880080-303fm6kgfot8hiopign1j5odvkn7m7bd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY940MDe6YtmItNwPeIbNnUIhFLAlnld0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599472880080-303fm6kgfot8hiopign1j5odvkn7m7bd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

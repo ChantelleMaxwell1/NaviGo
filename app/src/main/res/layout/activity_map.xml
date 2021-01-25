@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MapsActivity" />
+
+    <!--<com.mancj.materialsearchbar.MaterialSearchBar
+        style="@style/MaterialSearchBarLight"
+        app:mt_speechMode="false"
+        app:mt_searchIconTint="@color/colorAccent"
+        app:mt_hint="Search"
+        app:mt_maxSuggestionsCount="10"
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_weight="11"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchBar"
+        app:mt_navIconEnabled="false"
+        android:outlineProvider="bounds"
+        app:mt_placeholder="Search"/>
+
+    <ImageButton
+        android:id="@+id/btn_star"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_weight="2"
+        android:src="@drawable/ic_star"
+        android:background="#FFFFFF"/>-->
+
+    <!--<ImageView
+        android:id="@+id/user_pin"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:translationY="-24dp"
+        android:src="@drawable/ic_user_pin"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+        android:background="#FFFFFF"
+        >
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            style="@style/MaterialSearchBarLight"
+            app:mt_speechMode="false"
+            app:mt_searchIconTint="@color/colorAccent"
+            app:mt_hint="Search"
+            app:mt_maxSuggestionsCount="10"
+            android:layout_width="0dp"
+            android:layout_weight="13"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchBar"
+            app:mt_navIconEnabled="false"
+            android:outlineProvider="bounds"
+            app:mt_placeholder="Search"/>
+
+        <!--<ImageButton
+            android:id="@+id/btn_star"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_star"
+            android:background="#FFFFFF"/>-->
+
+        <ImageButton
+            android:id="@+id/btn_nav"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_weight="2"
+            android:paddingRight="7dp"
+            android:src="@drawable/ic_nav"
+            android:background="#FFFFFF"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp">
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:text="Get Route"
+            android:textColor="#FFFFFF"
+            android:layout_weight="5"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorAccent" />
+
+        <ImageButton
+            android:id="@+id/btn_refresh"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="4"
+            android:src="@drawable/ic_refresh"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorAccent"/>
+
+        <ImageButton
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_save"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorAccent"/>
+
+        <ImageButton
+            android:id="@+id/btn_star"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_fav"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorAccent"/>
+
+        <!--<Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorAccent" />-->
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/ic_gps"
+        android:src="@drawable/ic_gps"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="15dp"/>
+
+    <!--<RelativeLayout
+        android:id="@+id/map_menu"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/ic_magnify"
+            android:src="@drawable/ic_magnify"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/search"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/search"
+            android:textSize="14sp"
+            android:hint="Search"
+            android:imeOptions="actionSearch"/>
+
+    </RelativeLayout>-->
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="2dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/ic_gps"
+            android:src="@drawable/ic_gps"/>
+
+    </LinearLayout>-->
+
+</RelativeLayout>
